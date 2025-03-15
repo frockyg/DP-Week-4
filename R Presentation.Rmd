@@ -31,10 +31,9 @@ This application fits two linear models using the data from the R pressure datas
 - Model 1 is a 1-factor linear model of $pressure$ as a function of $temperature$;
 - Model 2 is a 1-factor linear model of $pressure$ where the dependent variable is the spline function: $max(temperature-250,0)$.
 
-As can be seen in the shiny server application available in xxx, Model 2 results in a better model fit than Model 1.
+As can be seen in the server application available in [shinyapps](https://frockyg.shinyapps.io/dp-week-4/), Model 2 results in a better model fit than Model 1.
 
 The data used, ui.R and Server.R code are available in this [github repo](https://github.com/frockyg/DP-Week-4).
-
 
 ## Vapor Pressure of Mercury as a Function of Temperature
 The dataset used in the Shiny application is the pressure dataset in R displayed in the plot below.  
