@@ -1,0 +1,43 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "FrockyG"
+date: "2025-03-14"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Project Goal
+
+This peer assessed assignment has two parts.
+
+First, you will create a Shiny application and deploy it on Rstudio’s servers.
+
+Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+## Steps to Perform
+
+- Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+- Deploy the application on Rstudio’s shiny server
+- Share the application link by pasting it into the provided text box
+- Share your server.R and ui.R code on github
+
+## How to use the application
+
+This application fits two linear models using the data from the R pressure dataset.
+
+- Model 1 is a 1-factor linear model of $pressure$ as a function of $temperature$;
+- Model 2 is a 1-factor linear model of $pressure$ where the dependent variable is the spline function: $max(temperature-250,0)$.
+
+As can be seen in the server application available in [shinyapps](https://frockyg.shinyapps.io/dp-week-4/), Model 2 results in a better model fit than Model 1.
+
+The data used, ui.R and Server.R code are available in this [github repo](https://github.com/frockyg/DP-Week-4).
+
+## Vapor Pressure of Mercury as a Function of Temperature
+The dataset used in the Shiny application is the pressure dataset in R displayed in the plot below.  
+```{r pressure}
+plot(pressure)
+```
+
